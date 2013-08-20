@@ -1,74 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=description content="Experimental typing games!"><title>Typist</title><link rel=stylesheet href=typist-7.css><link rel="shortcut icon" href=favicon.webp type=image/webp sizes=128x128><body><div id=quote-op class=opening><div id=quote><p>“I’ll leave you with a challenge.</p><p>Find one – that’s right, just one – video game</p><p>that is not about learning.”</p><p class=author>— Keith Devlin, 2012</p></div></div><div id=presents-op class=opening><p id=name>imagentleman</p><p id=subtitle>presents</p></div><div id=logo-op class="opening transition"><h1 id=logo>Typist</h1></div><div id=caption class=transition>Click or press any key to continue</div><div id=menu><div class=menu_game><h1 class=game_name>Stories</h1><div class=menu_row><div id=stories_wrap class=menu_wrap><div id=stories_option><h2>Normal</h2></div><a class=menu_anchor>S</a></div></div></div><div class=menu_game><h1 class=game_name>Type!</h1><div class=menu_row><div class=menu_wrap><div id=easy_option><h2>Easy</h2></div><a class=menu_anchor>A</a></div><div class=menu_wrap><div id=single_option><h2>Hard</h2></div><a class=menu_anchor>F</a></div><div class=menu_wrap><div id=vs_option><h2>1vs1</h2></div><a class=menu_anchor>J</a></div></div></div><div class=menu_game><h1 class=game_name>Dancing</h1><div class=menu_row><div id=circuits_wrap class=menu_wrap><div id=circuits_option><h2>Normal</h2></div><a class=menu_anchor>C</a></div></div></div></div><h1 id=title>Typist</h1><h1 id=timer></h1><div id=solo class=opening><div id=row1 class=row></div><div id=row2 class=row></div><div id=row3 class=row></div><div id=solo_score><span>You scored</span> <span id=solo_score_value>42</span></div></div><div id=easy class=opening><div id=easy_row class=row><div id=easyd class=block>d</div><div id=easyf class=block>f</div><div id=easyj class=block>j</div><div id=easyk class=block>k</div></div><div id=easy_score><span>You scored</span> <span id=easy_score_value>42</span></div></div><div id=vs class=opening><div id=vs_row1 class=row><div id=vsw class=block>w</div><div id=vse class=block>e</div><div id=vsr class=block>r</div><div id=vsu class=block>u</div><div id=vsi class=block>i</div><div id=vso class=block>o</div></div><div id=vs_row2 class=row><div id=vss class=block>s</div><div id=vsd class=block>d</div><div id=vsf class=block>f</div><div id=vsj class=block>j</div><div id=vsk class=block>k</div><div id=vsl class=block>l</div></div><div id=vs_score><div id=vs_score_left><span>Scored</span> <span id=vs_score_left_value>42</span></div><div id=vs_score_right><span>Scored</span> <span id=vs_score_right_value>42</span></div></div></div><div id=stories class=opening><h2 id=phrase></h2><h3 id=story_title></h3><pre id=complete_story></pre>
+</div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Typist : " />
+<div id=circuits class=opening><div id=c_row1 class=row><div id=c_q class="block transition">q</div><div id=c_w class="block transition">w</div><div id=c_e class="block transition">e</div><div id=c_r class="block transition">r</div></div><div id=c_row2 class=row><div id=c_a class="block transition">a</div><div id=c_s class="block transition">s</div><div id=c_d class="block transition">d</div><div id=c_f class="block transition">f</div></div><div id=c_row3 class=row><div id=c_z class="block transition">z</div><div id=c_x class="block transition">x</div><div id=c_c class="block transition">c</div><div id=c_v class="block transition">v</div></div><div id=circuits_result></div></div><script src=loading-7.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Typist</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/imagentleman/typist">View on GitHub</a>
-
-          <h1 id="project_title">Typist</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/imagentleman/typist/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/imagentleman/typist/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Typist maintained by <a href="https://github.com/imagentleman">imagentleman</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+  ga('create', 'UA-40495135-3', 'imagentleman.github.io');
+  ga('send', 'pageview');</script>
